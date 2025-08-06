@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Demo</h1>
+    </header>
+
+    <main>
+        <!-- Contact Form Section -->
+        <section class="form-section">
+            <h2>Contact Us</h2>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Interactive Features Section -->
+        <section class="features">
+            <h2>Interactive Features</h2>
+            
+            <!-- Feature 1: Color Picker -->
+            <div class="feature">
+                <h3>Background Color Picker</h3>
+                <input type="color" id="colorPicker" value="#ffffff">
+                <button id="applyColor">Apply Color</button>
+            </div>
+            
+            <!-- Feature 2: Counter -->
+            <div class="feature">
+                <h3>Click Counter</h3>
+                <p>Count: <span id="counter">0</span></p>
+                <button id="incrementBtn">Increment</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Interactive Web Demo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
